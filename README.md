@@ -5,13 +5,13 @@
 
 ---
 
-## 🌐 Live Demo  
+##  Live Demo  
 
-👉 **Try it now:** [https://fakenews-detector-p1vx.onrender.com/](https://fakenews-detector-p1vx.onrender.com/)  
+👉 **Try it now:** [Launch Web Application](https://fakenews-detector-p1vx.onrender.com/)  
 
 ---
 
-## 📖 Overview  
+## Overview  
 
 Fake News Detector is a machine learning-based web application that was constructed to assist users to confirm the authenticity of news articles online.
   
@@ -25,22 +25,22 @@ The present project was created as one of the research and development projects 
 
 ---
 
-## 🤖 The AI Behind It  
+## The AI Behind It  
 
 The system uses **three machine learning models**, each personified with a friendly name to make the experience less technical and more approachable:
 
 | Model Name | Algorithm | Personality |
 |-------------|------------|-------------|
-| 🧠 **Phuti** | Naive Bayes | Efficient and low level, it is fast and can process huge text with high accuracy. |
-| 💡 **Maria** | Support Vector Machine (SVM) |Analytical and accurate - identifies definite borders between Real and Fake news. |
-| 📊 **John** | Logistic Regression | 	Stable and moderated - provides the same outcome when used on various articles. |
+| **Phuti** | Naive Bayes | Efficient and low level, it is fast and can process huge text with high accuracy. |
+|  **Maria** | Support Vector Machine (SVM) |Analytical and accurate - identifies definite borders between Real and Fake news. |
+|  **John** | Logistic Regression | 	Stable and moderated - provides the same outcome when used on various articles. |
 
 Each model is trained on a pre-assembled set of news articles and make use of text preprocessing, TF-IDF vectorization, and natural language processing (NLP).
 
 
 ---
 
-## ⚙️ Tech Stack  
+## Tech Stack  
 
 **Frontend:**  
 - HTML  
@@ -62,7 +62,7 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 
 ---
 
-## 🧩 System Architecture  
+## System Architecture  
 
 1. **Frontend (Client):**  
    - Users inputs either a URL or text to check.
@@ -82,22 +82,22 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 
 ---
 
-## 🧠 Features  
+## Features  
 
-✅ **Multi-model prediction:** The user will have options on which model to use.  
-✅ **Confidence score:** Shows the degree of confidence of the model with regard to its prediction.
+ **Multi-model prediction:** The user will have options on which model to use.  
+ **Confidence score:** Shows the degree of confidence of the model with regard to its prediction.
  
-✅ **Automatic summarization:** Produces summaries which are readable. 
-✅ **Feedback system:** The users can review the predictions to assist in improving the models.
+ **Automatic summarization:** Produces summaries which are readable. 
+ **Feedback system:** The users can review the predictions to assist in improving the models.
   
-✅ **Offline & error handling:** Friendly and graceful modal and user-friendly feedbacks about the unavailability of internet.
+ **Offline & error handling:** Friendly and graceful modal and user-friendly feedbacks about the unavailability of internet.
   
-✅ **Responsive design:** Mobile and desktop.  
-✅ **Humanized AI personalities:** Phuti, Maria and John are the models that make machine learning friendly.
+**Responsive design:** Mobile and desktop.  
+ **Humanized AI personalities:** Phuti, Maria and John are the models that make machine learning friendly.
 
 ---
 
-## 🧍‍♂️ User Flow  
+## User Flow  
 
 1. Enter or paste a **news article or link**.  
 2. Select a **model** (Phuti, Maria, or John).  
@@ -107,7 +107,7 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 
 ---
 
-## 🧾 Example Output  
+## Example Output  
 
 > **Detection:** 🟢 Real News  
 > **Confidence:** 92.45%  
@@ -117,7 +117,7 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 
 ---
 
-## 📦 API Endpoints  
+## API Endpoints  
 
 | Endpoint | Method | Description |
 |-----------|--------|-------------|
@@ -126,9 +126,27 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 
 ---
 
-## 🧑‍💻 Developer  
+##  Dependencies
+
+All dependencies (Flask, MySQL connector, Newspaper3k, NLTK, Scikit-learn, etc.) are already containerized and deployed with the backend API.
+
+You only need a modern web browser to run the frontend. [Click Here To Run Application](https://fakenews-detector-p1vx.onrender.com/)
+
+---
+
+##  Github
+
+1. **Pushed frontend code**
+   ```bash
+   https://github.com/phuti652-kotetsu/fakenews-detector.git
+   
+
+
+## Developer  
 
 **Developed by:** *Phuti Mabitsela*  
 
-🔗 Live App: [https://fakenews-detector-p1vx.onrender.com/](https://fakenews-detector-p1vx.onrender.com/)  
-🔗 API: [https://fakenews-detector-latest.onrender.com](https://fakenews-detector-latest.onrender.com)  
+ Live App: [https://fakenews-detector-p1vx.onrender.com/](https://fakenews-detector-p1vx.onrender.com/)  
+ API: [https://fakenews-detector-latest.onrender.com](https://fakenews-detector-latest.onrender.com)  
+ 
+---
