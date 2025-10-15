@@ -109,7 +109,7 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 
 ## 🧾 Example Output  
 
-> **Prediction:** 🟢 Real News  
+> **Detection:** 🟢 Real News  
 > **Confidence:** 92.45%  
 > **Model Used:** Naive Bayes  
 > **Summary:** “ The new housing plan by the government and the response of local communities is addressed in the article.
