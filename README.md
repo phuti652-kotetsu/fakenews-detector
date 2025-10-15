@@ -135,22 +135,7 @@ This project was developed as part of a **University Machine Learning Capstone**
 
 ## 🧑‍💻 Developer  
 
-**Developed by:** *Austin Sydney*  
-📍 South Africa  
+**Developed by:** *Phuti Mabitsela*  
+
 🔗 Live App: [https://fakenews-detector-p1vx.onrender.com/](https://fakenews-detector-p1vx.onrender.com/)  
 🔗 API: [https://fakenews-detector-latest.onrender.com](https://fakenews-detector-latest.onrender.com)  
-
----
-
-## 🛡️ License  
-
-This project is released for **academic and educational use**.  
-You may reference or modify it with proper attribution.  
-
----
-
-## ❤️ Acknowledgements  
-
-- scikit-learn and Flask communities for their powerful open-source tools.  
-- University faculty for guidance on applied machine learning and NLP.  
-- Early users who provided valuable feedback to improve model accuracy.  
