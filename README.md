@@ -13,15 +13,15 @@
 
 ## 📖 Overview  
 
-**Fake News Detector** is a machine learning–powered web application built to help users verify the authenticity of online news articles.  
+Fake News Detector is a machine learning-based web application that was constructed to assist users to confirm the authenticity of news articles online.
+  
+On entering a news headline, article text, or link the system:
 
-By entering a news headline, article text, or link, the system:  
-1. Analyzes the content using trained ML models.  
-2. Classifies it as **Real** 🟢 or **Fake** 🔴.  
-3. Provides a **confidence score** and **summary**.  
-4. Allows users to give **feedback**, helping the model continuously improve.  
-
-This project was developed as part of a **university research and development initiative** focused on **AI in media literacy**.
+Scans the content on trainedML models.
+Classifies it as Real  or Fake .
+Gives out a score and summary on confidence.
+The users can provide their feedback to ensure that the model improves continuously.
+The present project was created as one of the research and development projects of a university concerning AI in media literacy.
 
 ---
 
@@ -31,11 +31,12 @@ The system uses **three machine learning models**, each personified with a frien
 
 | Model Name | Algorithm | Personality |
 |-------------|------------|-------------|
-| 🧠 **Phuti** | Naive Bayes | Fast and efficient — handles large text quickly with good accuracy. |
-| 💡 **Maria** | Support Vector Machine (SVM) | Analytical and precise — finds clear boundaries between Real and Fake news. |
-| 📊 **John** | Logistic Regression | Reliable and balanced — offers consistent results across different article types. |
+| 🧠 **Phuti** | Naive Bayes | Efficient and low level, it is fast and can process huge text with high accuracy. |
+| 💡 **Maria** | Support Vector Machine (SVM) |Analytical and accurate - identifies definite borders between Real and Fake news. |
+| 📊 **John** | Logistic Regression | 	Stable and moderated - provides the same outcome when used on various articles. |
 
-Each model is trained on curated datasets of news articles, leveraging **text preprocessing**, **TF-IDF vectorization**, and **natural language processing (NLP)** techniques.
+Each model is trained on a pre-assembled set of news articles and make use of text preprocessing, TF-IDF vectorization, and natural language processing (NLP).
+
 
 ---
 
@@ -64,12 +65,13 @@ Each model is trained on curated datasets of news articles, leveraging **text pr
 ## 🧩 System Architecture  
 
 1. **Frontend (Client):**  
-   - Users input text or a URL to check.  
-   - The system displays predictions, summaries, and feedback options.  
+   - Users inputs either a URL or text to check.
+   - The system then displays predictions, summaries, and feedback options.  
 
 2. **Backend (Flask API):**  
    - Endpoint: [`/predict`](https://fakenews-detector-latest.onrender.com/predict)  
-     → Accepts article text, runs model predictions, and returns results.  
+     → Receives text to be processed in the article, performs predictions with the model and provides results.
+  
    - Endpoint: [`/feedback`](https://fakenews-detector-latest.onrender.com/feedback)  
      → Stores user feedback in a MySQL database to improve model accuracy.  
 
