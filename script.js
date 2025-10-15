@@ -191,7 +191,7 @@ function sendFeedback(value) {
       // Handling HTTP-level errors (e.g., Flask down, 500)
       if (!res.ok) {
         console.warn("Server responded with status:", res.status);
-        noInternetModal.classList.remove("hidden");
+       // noInternetModal.classList.remove("hidden");
         document.querySelector("#noInternetModal p").textContent =
           "The feedback server is unreachable or returned an error, please check your connection.";
         throw new Error("Bad response from server");
@@ -264,3 +264,4 @@ document.getElementById("checkNewsBtn").addEventListener("click", () => {
   }
 
 });
+
