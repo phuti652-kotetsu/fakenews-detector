@@ -118,21 +118,6 @@ Each model is trained on curated datasets of news articles, leveraging **text pr
 
 ---
 
-## 💡 Future Improvements  
-
-- Add a **deep learning model** (e.g., LSTM or BERT).  
-- Expand the **dataset** to include more local languages and sources.  
-- Implement a **user dashboard** to visualize trends in fake news.  
-- Introduce **real-time news scraping**.  
-
----
-
-## 🎓 About the Project  
-
-This project was developed as part of a **University Machine Learning Capstone** focused on combating misinformation and promoting digital literacy using artificial intelligence.  
-
----
-
 ## 🧑‍💻 Developer  
 
 **Developed by:** *Phuti Mabitsela*  
