@@ -1,6 +1,7 @@
 # 📰 Fake News Detector  
 
-### 🔍 An intelligent web app that classifies **local and international news** as **Real** or **Fake**, using multiple **machine learning models**, and even generates concise **summaries** of articles.
+### A smart web application that distinguishes between **real** and **fake** news, both local and international, based on several machine learning algorithms and also offers summaries of articles in just a few lines.
+ 
 
 ---
 
