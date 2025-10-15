@@ -73,23 +73,27 @@ Each model is trained on a pre-assembled set of news articles and make use of te
      → Receives text to be processed in the article, performs predictions with the model and provides results.
   
    - Endpoint: [`/feedback`](https://fakenews-detector-latest.onrender.com/feedback)  
-     → Stores user feedback in a MySQL database to improve model accuracy.  
+     → Feedback is stored in a MySQL database and used to enhance the accuracy of the model by the stores.
+
 
 3. **Machine Learning Core:**  
-   - Trained and serialized ML models loaded via Flask.  
-   - Implements NLP preprocessing and classification logic.  
+   - FLask-loaded trained and serialized ML models. 
+   - Adopts NLP processing and categorization algorithms.  
 
 ---
 
 ## 🧠 Features  
 
-✅ **Multi-model prediction:** Users can choose which model to use.  
-✅ **Confidence score:** Displays how sure the model is about its prediction.  
-✅ **Automatic summarization:** Generates concise summaries for readability.  
-✅ **Feedback system:** Users can rate predictions to help refine models.  
-✅ **Offline & error handling:** Graceful “No Internet” modal and user-friendly feedback.  
-✅ **Responsive design:** Works across mobile and desktop.  
-✅ **Humanized AI personalities:** Models are presented as *Phuti*, *Maria*, and *John* to make machine learning approachable.
+✅ **Multi-model prediction:** The user will have options on which model to use.  
+✅ **Confidence score:** Shows the degree of confidence of the model with regard to its prediction.
+ 
+✅ **Automatic summarization:** Produces summaries which are readable. 
+✅ **Feedback system:** The users can review the predictions to assist in improving the models.
+  
+✅ **Offline & error handling:** Friendly and graceful modal and user-friendly feedbacks about the unavailability of internet.
+  
+✅ **Responsive design:** Mobile and desktop.  
+✅ **Humanized AI personalities:** Phuti, Maria and John are the models that make machine learning friendly.
 
 ---
 
@@ -97,7 +101,7 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 
 1. Enter or paste a **news article or link**.  
 2. Select a **model** (Phuti, Maria, or John).  
-3. Click **Check**.  
+3. Click **Check News**.  
 4. View the result (Real/Fake), confidence, summary, and details.  
 5. Submit **feedback** to help improve the system.  
 
@@ -107,8 +111,9 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 
 > **Prediction:** 🟢 Real News  
 > **Confidence:** 92.45%  
-> **Model Used:** Maria (SVM)  
-> **Summary:** “The article discusses the government’s new housing plan and reactions from local communities.”
+> **Model Used:** Naive Bayes  
+> **Summary:** “ The new housing plan by the government and the response of local communities is addressed in the article.
+”
 
 ---
 
@@ -116,8 +121,8 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 
 | Endpoint | Method | Description |
 |-----------|--------|-------------|
-| `/predict` | `POST` | Accepts text and returns prediction, confidence, and summary |
-| `/feedback` | `POST` | Stores user feedback and metadata into database |
+| `/predict` | `POST` | Receives text then returns prediction, confidence, and summary |
+| `/feedback` | `POST` | POST Feedback and metadata into database. |
 
 ---
 
