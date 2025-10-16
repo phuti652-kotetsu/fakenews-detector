@@ -130,15 +130,21 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 
 All dependencies (Flask, MySQL connector, Newspaper3k, NLTK, Scikit-learn, etc.) are already containerized and deployed with the backend API.
 
-You only need a modern web browser to run the frontend. [Click Here To Run Application](https://fakenews-detector-p1vx.onrender.com/)
+You only need a modern web browser to run the frontend. 
 
 ---
 
-##  Github
+##  Usage Instruction
 
-1. **Pushed frontend code**
+1. **Commands**
    ```bash
-   https://github.com/phuti652-kotetsu/fakenews-detector.git
+   git clone https://github.com/phuti652-kotetsu/fakenews-detector.git
+   cd fakenews-detector
+   open index.html
+
+
+Alternatively, use the deployed version [Click Here To Run Application](https://fakenews-detector-p1vx.onrender.com/)
+
    
 
 
