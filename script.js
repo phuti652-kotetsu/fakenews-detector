@@ -89,8 +89,22 @@ document.getElementById("predictionText").textContent =
 document.getElementById("confidence").textContent = 
   `${Number(data.confidence).toFixed(2)}% confidence`;
 
+let modelFigure = "";
+switch (data.model_used) {
+    case "Naive Bayes":
+      modelFigure=`Phuti thinks this news is ${ data.prediction === "Real" ? "Real News" : "Fake News"}  `;    
+      break;
+    case "Support Vector Machine":
+      modelFigure=`Lerato thinks this news is ${ data.prediction === "Real" ? "Real News" : "Fake News"}  `;    
+      break;  
+    case "Logistic Regression":
+      modelFigure=`Thandi thinks this news is ${ data.prediction === "Real" ? "Real News" : "Fake News"}  `;    
+      break;  
+  }
+
 document.getElementById("modelUsed").textContent = 
-  `Model: ${data.model_used.replace("_", " ")}`;
+  `${modelFigure}`;
+
 
 // Title & meta info
 document.getElementById("articleTitle").textContent = data.title || "";
