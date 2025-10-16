@@ -92,7 +92,7 @@ document.getElementById("confidence").textContent =
 let modelFigure = "";
 switch (data.model_used) {
     case "Naive Bayes":
-      modelFigure=`Phuti thinks this news is ${ data.prediction === "Real" ? "real news." : "fake News."}  `;    
+      modelFigure=`Phuti thinks this news is ${ data.prediction === "Real" ? "real news." : "fake news."}  `;    
       break;
     case "Support Vector Machine":
       modelFigure=`Maria thinks this news is ${ data.prediction === "Real" ? "real news." : "fake news."}  `;    
