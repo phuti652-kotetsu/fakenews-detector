@@ -122,7 +122,7 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 | Endpoint | Method | Description |
 |-----------|--------|-------------|
 | `/predict` | `POST` | Receives text then returns prediction, confidence, and summary |
-| `/feedback` | `POST` | POST Feedback and metadata into database. |
+
 
 ---
 
