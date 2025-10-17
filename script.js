@@ -72,7 +72,7 @@ document.getElementById("checkBtn").disabled = false;
     //Shows no internt modal
     if (data.error) {
     
-      console.error("Server error:", data.error);
+      //console.error("Server error:", data.error);
 noInternetModal.classList.remove("hidden"); 
      
       return;
@@ -224,8 +224,7 @@ function sendFeedback(value) {
       feedbackMsg.classList.add("text-gray-500", "font-medium");
     })
     .catch((error) => {
-      console.error("Feedback submission error:", error);
-
+      
       setTimeout(() => miniLoader.classList.add("hidden"), 400);
 
       // Hiding loader, re-enabling buttons
@@ -267,8 +266,7 @@ document.getElementById("checkNewsBtn").addEventListener("click", () => {
 
 
    } catch (error) {
-    console.error("Prediction error:", error);
-
+    
     // Hiding loaders & re-enable button
     mainLoader.classList.add("hidden");
     document.getElementById("checkBtn").disabled = false;
