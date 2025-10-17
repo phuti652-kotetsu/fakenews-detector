@@ -31,9 +31,9 @@ The system uses **three machine learning models**, each personified with a frien
 
 | Model Name | Algorithm | Personality |
 |-------------|------------|-------------|
-| **Phuti** | Naive Bayes | Efficient and low level, it is fast and can process huge text with high accuracy. |
-|  **Maria** | Support Vector Machine (SVM) |Analytical and accurate - identifies definite borders between Real and Fake news. |
-|  **John** | Logistic Regression | 	Stable and moderated - provides the same outcome when used on various articles. |
+| **Cortana** | Naive Bayes | Efficient and low level, it is fast and can process huge text with high accuracy. |
+|  **Jarvis** | Support Vector Machine (SVM) |Analytical and accurate - identifies definite borders between Real and Fake news. |
+|  **GLaDOS** | Logistic Regression | 	Stable and moderated - provides the same outcome when used on various articles. |
 
 Each model is trained on a pre-assembled set of news articles and make use of text preprocessing, TF-IDF vectorization, and natural language processing (NLP).
 
@@ -72,8 +72,7 @@ Each model is trained on a pre-assembled set of news articles and make use of te
    - Endpoint: [`/predict`](https://fakenews-detector-latest.onrender.com/predict)  
      → Receives text to be processed in the article, performs predictions with the model and provides results.
   
-   - Endpoint: [`/feedback`](https://fakenews-detector-latest.onrender.com/feedback)  
-     → Feedback is stored in a MySQL database and used to enhance the accuracy of the model by the stores.
+   
 
 
 3. **Machine Learning Core:**  

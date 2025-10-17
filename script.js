@@ -92,13 +92,13 @@ document.getElementById("confidence").textContent =
 let modelFigure = "";
 switch (data.model_used) {
     case "Naive Bayes":
-      modelFigure=`Phuti thinks this news is ${ data.prediction === "Real" ? "real news." : "fake news."}  `;    
+      modelFigure=`Cortana thinks this news is ${ data.prediction === "Real" ? "real news." : "fake news."}  `;    
       break;
     case "Support Vector Machine":
-      modelFigure=`Maria thinks this news is ${ data.prediction === "Real" ? "real news." : "fake news."}  `;    
+      modelFigure=`Jarvis thinks this news is ${ data.prediction === "Real" ? "real news." : "fake news."}  `;    
       break;  
     case "Logistic Regression":
-      modelFigure=`John thinks this news is ${ data.prediction === "Real" ? "real news." : "fake News."}  `;    
+      modelFigure=`GLaDOS thinks this news is ${ data.prediction === "Real" ? "real news." : "fake News."}  `;    
       break;  
   }
 
