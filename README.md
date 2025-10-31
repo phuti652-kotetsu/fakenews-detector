@@ -10,6 +10,9 @@
 👉 **Try it now:** [Launch Web Application](https://fakenews-detector-p1vx.onrender.com/)  
 
 ---
+The live demo is hosted on a free Render server, which goes into sleep mode after periods of inactivity.
+When you first open the link, please wait 50–60 seconds for the backend to wake up and start responding.
+Subsequent requests will load instantly.
 
 ## Overview  
 
