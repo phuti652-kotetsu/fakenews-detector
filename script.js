@@ -8,6 +8,20 @@ const emptyTextModal = document.getElementById("emptyTextModal");
 const closeModalBtn = document.getElementById("closeModalBtn");
 const closeModal2Btn = document.getElementById("closeModal2Btn");
 
+window.onload = function() {
+  // Check if modal see
+  if (!localStorage.getItem("delayModalSeen")) {
+    const modal = document.getElementById("responseDelayModal");
+    modal.classList.remove("hidden");
+
+    // Close modal on Got it click
+    document.getElementById("closeModal2Btn").addEventListener("click", () => {
+      modal.classList.add("hidden");
+      localStorage.setItem("delayModalSeen", "true");
+    });
+  }
+};
+
 closeModalBtn.addEventListener("click", () => {
   noInternetModal.classList.add("hidden");
  
