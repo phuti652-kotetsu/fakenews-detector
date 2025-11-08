@@ -157,8 +157,25 @@
 
 
 
-<!-- Response Delay Modal --> <div id="responseDelayModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"> <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 w-11/12 max-w-sm text-center"> <div class="text-4xl mb-3">🐧</div> <h2 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100"> Initial Response Delay </h2> <p class="text-sm text-gray-600 dark:text-gray-400 mb-4"> The live demo is deployed on a free Render server, which goes into sleep mode after periods of inactivity. When you first open the link, please wait 50–60 seconds for the backend to wake up and start responding. Subsequent requests will load instantly. </p> <button id="closeModal2Btn" class="mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition"> Got it </button> </div> </div>
-
+<!-- Response Delay Modal -->
+<div id="delayModal"
+     class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-500 opacity-0">
+  <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-6 w-11/12 max-w-sm text-center transform scale-95 transition-transform duration-500">
+    <div class="text-4xl mb-3">⚡</div>
+    <h2 class="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+      Server Waking Up
+    </h2>
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+      The backend is hosted on a free server that sleeps after global inactivity.
+      If no one has used it recently, the first response may take 50–60 seconds.
+      After that, it stays fast for everyone.
+    </p>
+    <button id="closeDelayModal"
+            class="mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition">
+      Got it
+    </button>
+  </div>
+</div>
 <!-- Lost Connections & Bad HTTP responses Modal -->
 <div id="noInternetModal" 
      class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">

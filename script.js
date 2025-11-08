@@ -9,15 +9,19 @@ const closeModalBtn = document.getElementById("closeModalBtn");
 const closeModal2Btn = document.getElementById("closeModal2Btn");
 
 window.onload = function() {
-  // Check if modal see
-  if (!localStorage.getItem("delayModalSeen")) {
-    const modal = document.getElementById("responseDelayModal");
+  if (!localStorage.getItem("delayNoticeShown")) {
+    const modal = document.getElementById("delayModal");
     modal.classList.remove("hidden");
+    setTimeout(() => {
+      modal.classList.add("opacity-100");
+      modal.querySelector("div").classList.add("scale-100");
+    }, 50);
 
-    // Close modal on Got it click
-    document.getElementById("closeModal2Btn").addEventListener("click", () => {
-      modal.classList.add("hidden");
-      localStorage.setItem("delayModalSeen", "true");
+    document.getElementById("closeDelayModal").addEventListener("click", () => {
+      modal.classList.remove("opacity-100");
+      modal.querySelector("div").classList.remove("scale-100");
+      setTimeout(() => modal.classList.add("hidden"), 300);
+      localStorage.setItem("delayNoticeShown", "true");
     });
   }
 };
