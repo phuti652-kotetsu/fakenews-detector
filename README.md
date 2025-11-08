@@ -95,14 +95,14 @@ Each model is trained on a pre-assembled set of news articles and make use of te
  **Offline & error handling:** Friendly and graceful modal and user-friendly feedbacks about the unavailability of internet.
   
 **Responsive design:** Mobile and desktop.  
- **Humanized AI personalities:** Phuti, Maria and John are the models that make machine learning friendly.
+ **Agenticised AI personalities:** A.L.L.I.E 2.0, Jarvis and GLaDOS are the models that make machine learning friendly.
 
 ---
 
 ## User Flow  
 
 1. Enter or paste a **news article or link**.  
-2. Select a **model** (Phuti, Maria, or John).  
+2. Select a **model** (A.L.L.I.E 2.0, Jarvis, or GLaDOS).  
 3. Click **Check News**.  
 4. View the result (Real/Fake), confidence, summary, and details.  
 5. Submit **feedback** to help improve the system.  

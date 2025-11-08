@@ -72,7 +72,7 @@ document.getElementById("checkBtn").disabled = false;
     //Shows no internt modal
     if (data.error) {
     
-      //console.error("Server error:", data.error);
+      
 noInternetModal.classList.remove("hidden"); 
      
       return;
@@ -140,7 +140,7 @@ if (localStorage.getItem(feedbackKey)) {
   approveBtn.classList.add("opacity-50", "cursor-not-allowed");
   disapproveBtn.classList.add("opacity-50", "cursor-not-allowed");
   
-  // Optionally: Hide buttons immediately if already submitted
+  // Hiding buttons immediately if already submitted
   document.getElementById("feedbackButtons").classList.add("hidden");
   feedbackMsg.textContent = 
     "💬 You’ve already submitted feedback for this article.";
