@@ -68,7 +68,7 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 ## System Architecture  
 
 1. **Frontend (Client):**  
-   - Users inputs either a URL or text to check.
+   - Users inputs either a URL or text to check, the system will detect which was entered.
    - The system then displays predictions, summaries, and feedback options.  
 
 2. **Backend (Flask API):**  
