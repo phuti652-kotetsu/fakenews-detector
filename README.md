@@ -34,7 +34,7 @@ The system uses **three machine learning models**, each personified with a frien
 
 | Model Name | Algorithm | Personality |
 |-------------|------------|-------------|
-| **Cortana** | Naive Bayes | Efficient and low level, it is fast and can process huge text with high accuracy. |
+| **A.L.I.E 2.0** | Naive Bayes | Efficient and low level, it is fast and can process huge text with high accuracy. |
 |  **Jarvis** | Support Vector Machine (SVM) |Analytical and accurate - identifies definite borders between Real and Fake news. |
 |  **GLaDOS** | Logistic Regression | 	Stable and moderated - provides the same outcome when used on various articles. |
 
