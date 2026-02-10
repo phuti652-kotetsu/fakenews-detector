@@ -118,6 +118,11 @@ Each model is trained on a pre-assembled set of news articles and make use of te
 ”
 
 ---
+ <iframe 
+  src="analytics.html"
+  width="100%" 
+  height="800">
+</iframe>
 
 ## API Endpoints  
 
