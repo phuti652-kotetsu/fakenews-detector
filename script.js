@@ -102,7 +102,7 @@ noInternetModal.classList.remove("hidden");
 document.getElementById("resultBox").classList.remove("hidden");
 
 document.getElementById("predictionText").textContent = 
-  data.prediction === "Real" ? "🟢 Real News" : "🔴 Fake News";
+  data.prediction === "Real" ? "🟢 Likely Real News" : "🔴 Likely Fake News";
 
 document.getElementById("confidence").textContent = 
   `${Number(data.confidence).toFixed(2)}% confidence`;
@@ -131,7 +131,7 @@ if (data.author && data.author.length > 0) meta += `${data.author}`;
 if (data.published_date && data.published_date !== "Unavailable") meta += ` • ${data.published_date}`;
 document.getElementById("articleMeta").textContent = meta;
 
-// Summary (without “Summary:” label)
+// Summary 
 document.getElementById("summary").textContent = data.summary || "";
 // Show the feedback box
 document.getElementById("feedbackBox").classList.remove("hidden");
@@ -294,4 +294,5 @@ document.getElementById("checkNewsBtn").addEventListener("click", () => {
   }
 
 });
+
 
